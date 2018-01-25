@@ -1,16 +1,15 @@
-
 function ChangeArrIndex(){
-var arrIndex=localStorage.getItem('arrindex');
+var cookieIndex=localStorage.getItem('cookieIndex');
 var cookieArr=GetCookieArr();
  var arrLength=cookieArr.length;
- arrIndex=(arrIndex+1)%arrLength;
-  localStorage.setItem ('arrindex',arrIndex);
+ cookieIndex=(cookieIndex+1)%arrLength;
+  localStorage.setItem ('cookieIndex',cookieIndex);
 }
 
  function changeCookie(){
-   var arrIndex=localStorage.getItem('arrindex');
+   var cookieIndex=localStorage.getItem('cookieIndex');
    var cookieArr=GetCookieArr();
-	 var cookieStr=cookieArr[arrIndex];
+	 var cookieStr=cookieArr[cookieIndex];
     setCookie("MydlCookie",cookieStr);
     //document.getElementById("form1").submit();
  }
