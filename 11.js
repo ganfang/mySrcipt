@@ -4,6 +4,7 @@ var cookieArr=GetCookieArr();
  var arrLength=cookieArr.length;
  cookieIndex=(cookieIndex+1)%arrLength;
   localStorage.setItem ('cookieIndex',cookieIndex);
+  return true;
 }
 
  function changeCookie(){
